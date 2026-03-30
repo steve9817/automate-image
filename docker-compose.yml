@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  rasa:
+    image: yenasys-rasa-uat
+    build: .
+    container_name: yenasys-rasa-uat
+    ports:
+      - "5005:5005"
+      - "5055:5055"
+    # volumes:
+    #   - ./:/app

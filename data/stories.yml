@@ -1,0 +1,13 @@
+version: "3.1"
+
+stories:
+
+- story: user feelings
+  steps:
+  - intent: greet
+  - action: action_user_name
+
+- story: user provide age
+  steps:
+  - intent: user_age
+  - action: action_user_details

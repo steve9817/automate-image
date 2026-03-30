@@ -1,0 +1,40 @@
+version: "3.1"
+
+intents:
+  - greet
+  - user_name
+  - user_age
+
+actions:
+  - action_user_name
+  - action_user_age
+  - validate_name_form
+  - action_user_details
+
+entities:
+  - name
+  - age
+
+forms:
+  name_form:
+    required_slots:
+      - name
+                
+slots:
+  name:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: name
+      
+  age:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: age
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

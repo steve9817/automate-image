@@ -1,0 +1,36 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: user_name
+  examples: |
+    - [Johan](name)
+    - My name is [John](name)
+    - I am [Alice](name)
+    - It's [Bob](name)
+    - This is [Charlie](name)
+    - Call me [Diana](name)
+
+- intent: user_age
+  examples: |
+    - [20](age)
+    - I am [25](age) years old
+    - My age is [30](age)
+    - I am [18](age)
+    - I just turned [22](age)
+    - I will be [40](age) next month
