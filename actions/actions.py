@@ -12,7 +12,7 @@ class ActionUserName(Action):
              tracker: Tracker,
              domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         
-        dispatcher.utter_message(text="Hello! Welcome to NDB")
+        dispatcher.utter_message(text="Hello! Welcome to NDB..")
         
         return []
     
